@@ -1,17 +1,20 @@
+--- 
 apiVersion: apps/v1beta1
 kind: Deployment
-metadata:
+metadata: 
   name: nginx-deployment
-spec:
+spec: 
   replicas: 3
-  template:
-    metadata:
-      labels:
+  template: 
+    metadata: 
+      labels: 
         app: nginx
-		component: neo4j
-    spec:
-      containers:
-      - name: nginx
-        image: nginx
-        ports:
-        - containerPort: 80
+        component: neo4j
+    spec: 
+      containers: 
+        - 
+          image: nginx
+          name: nginx
+          ports: 
+            - 
+              containerPort: 80
